@@ -39,8 +39,35 @@ print(f"\nShape after dropping rows with any missing values: {df_dropped.shape}"
 
 # Drop rows with missing values only in specific columns (example: 'director')
 df_director_dropped = df.dropna(subset=['director'])
-print(f"Shape after dropping rows with missing 'director': {df_director_dropped.shape}")
+print(f"\nShape after dropping rows with missing 'director': {df_director_dropped.shape}")
 
 df_dropped = df.dropna()
 print(f"\nShape after dropping rows with any missing values: {df_dropped.shape}")
 df_director_dropped = df.dropna(subset=['director'])
+
+df['rating'].value_counts()
+df['country'].value_counts().head(10)
+
+
+# 5. Data Visualization
+# -------------------------------------------------
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Country of TV Shows vs Movies
+sns.countplot(data=df, x='type')
+plt.title("Content Type Distribution")
+
+top_countries = df['country'].value_counts().head(10)
+sns.barplot(x=top_countries.values, y=top_countries.index)
+plt.title("Top 10 Countries with most content")
+plt.show()
+
+
+# 6. Correlation Heatmap
+# --------------------------------
+
+corr = df.corr(numeric_only=True)
+sns.heatmap(corr, annot=True, cmap="coolwarm")
+plt.show()
