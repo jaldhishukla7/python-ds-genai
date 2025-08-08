@@ -1,0 +1,60 @@
+✍️ Source: GeeksForGeeks | ✅ For Revision and Recall
+Link : https://www.geeksforgeeks.org/machine-learning/introduction-machine-learning/
+
+
+# BASICS OF MACHINE LEARNING
+----------------------------------------
+🧠 1. What is Machine Learning?
+Machine Learning (ML) is a way to teach computers to learn from data and make predictions or decisions without writing rules manually.
+
+💡 Instead of coding logic step-by-step, we give examples (data), and the model learns patterns on its own.
+
+🛠️ Simple Example:
+Input (Features)	            Output (Target)
+Area: 1500 sq ft, Rooms: 3	    Price: ₹50 Lakhs
+Area: 2000 sq ft, Rooms: 4	    Price: ₹75 Lakhs
+
+➡️ ML learns: "More area/rooms → higher price"
+
+🧩 2. Types of Machine Learning
+Type	                        Meaning	                                                Real Example
+✅ Supervised Learning	       Learn from labeled data (input-output given)	           Email spam detection, House price prediction
+🟡 Unsupervised Learning	    Work with unlabeled data (only input, no output)	    Customer segmentation, Clustering products
+🔴 Reinforcement Learning	    Learn by trial and error, get rewards or penalties	    Self-driving cars, Game AI
+
+🔁 3. Machine Learning Pipeline
+A pipeline is the step-by-step process to build an ML solution.
+
+📌 Steps in the Pipeline:
+Step	                     What Happens?	                      Simple Example
+1️⃣ Problem Definition	      What do you want to predict?	       House price, spam detection
+2️⃣ Data Collection	          Get the data	                       CSV file, online datasets
+3️⃣ Data Cleaning	          Remove missing values, fix errors	   Fill missing age with average
+4️⃣ Feature Selection	      Pick useful input columns	           Area, Rooms (skip irrelevant ones)
+5️⃣ Model Selection	          Choose algorithm	                   Linear Regression, Decision Tree
+6️⃣ Training	              Model learns from data	           Fits pattern like "more rooms → high price"
+7️⃣ Evaluation	              Check accuracy	                   Compare with actual output
+8️⃣ Prediction	              Use model on new data	               Predict price for unseen house
+
+⚠️ If data is bad or model is wrong → bad predictions
+
+🌍 4. Applications of Machine Learning
+📱 Real-World Use Cases:
+Domain	            Use Case Example
+E-commerce	        Product recommendations (Amazon, Flipkart)
+Entertainment	    Movie/music suggestions (Netflix, Spotify)
+Finance	            Fraud detection, loan approval
+Healthcare	        Disease prediction, drug discovery
+Agriculture	        Crop health detection using images
+Education	        Personalized learning apps
+Security	        Face recognition, CCTV anomaly detection
+Transportation	    Self-driving cars, traffic predictions
+Social Media	    Content recommendations (Instagram Reels, YT)
+
+✅ ML is used wherever we have data + decisions to make
+
+📝 Summary for Quick Recall:
+ML lets machines learn from data instead of rules
+3 main types: Supervised, Unsupervised, Reinforcement
+Pipeline = Step-by-step process from problem to prediction
+It’s used in almost every industry today
